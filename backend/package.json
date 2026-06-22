@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --watch index.js",
     "build:ui": "rm -rf dist && cd ../frontend && npm run build && cp -r dist ../backend",
-    "start": "node index.js && npm run build:ui"
+    "start": "npm run build:ui && node index.js"
   },
   "author": "",
   "license": "ISC",
